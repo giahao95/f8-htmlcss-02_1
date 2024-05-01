@@ -1,0 +1,274 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 2000px;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== Common ===== */
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  max-width: (1170px - 48px);
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  padding: 20px 41px 21px;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 14px;
+  background: #1ebfc1;
+}
+
+/* ===== Header ===== */
+.header {
+  position: sticky;
+  top: -44px;
+  padding: 52px 0 8px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.header .row {
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 31px;
+}
+
+.navbar .link {
+  display: inline-block;
+  text-align: center;
+  padding: 8px;
+  color: #2f3a3b;
+}
+
+.navbar .link::before {
+  content: attr(title);
+  display: block;
+  font-weight: 600;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.navbar .link:hover,
+.navbar .active {
+  font-weight: 600;
+}
+
+.header .action a:first-child {
+  color: #494949;
+}
+
+.header .action .sign-up-btn {
+  display: inline-block;
+  margin-left: 24px;
+  padding: 12px 24px;
+  color: #1ebfc1;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid #1ebfc1;
+}
+
+/* ===== Hero ===== */
+.hero {
+  margin-top: 42px;
+}
+
+.hero-content {
+  width: 39%;
+  padding-top: 60px;
+}
+
+.hero-content .sub-title {
+  color: #767e7e;
+  font-size: 1.4rem;
+}
+
+.hero-content .title {
+  margin-top: 18px;
+  color: #0d1111;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 1.16;
+}
+
+.hero-content .desc {
+  width: 81%;
+  margin-top: 46px;
+  color: #9da6a5;
+  font-size: 1.8rem;
+  line-height: 1.77;
+}
+
+.hero-content .action {
+  margin-top: 52px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.hero-content .watch-btn {
+  margin-top: -29px;
+}
+
+.hero-media {
+  position: relative;
+  width: 576px;
+  height: 631px;
+  margin-left: auto;
+  background-color: #e0f7f6;
+  background-image: url(../img/hero-img.svg);
+}
+
+.hero-media .courses {
+  width: 157px;
+  height: 75px;
+  position: absolute;
+  top: 149px;
+  left: -40px;
+  padding: 17px 25px;
+  border-radius: 18px;
+  background: #fefefd;
+  box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero-media .courses div:first-child {
+  position: relative;
+  width: 36px;
+  height: 40px;
+  margin-right: 16px;
+  background-color: #ff8282;
+  border-radius: 5px 2px 2px 5px;
+}
+
+.hero-media .courses div:first-child::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  bottom: 8px;
+  display: block;
+  width: 28px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 999px;
+}
+
+.hero-media .title {
+  color: #0d1111;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.hero-media .courses p:first-child {
+  margin-bottom: 5px;
+}
+
+.hero-media .avatar {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #1ebfc1;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.hero-media .avatar + .avatar {
+  margin-left: -7px;
+}
+
+.hero-media .schedules {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 46px;
+  left: -65px;
+  width: 124px;
+  height: 132px;
+  padding: 16px 35px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero-media .schedules .title {
+  margin-bottom: 16px;
+}
+
+.hero-media .schedules .bar {
+  position: relative;
+  margin-bottom: 10px;
+  width: 74px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #edf1f5;
+}
+
+.hero-media .schedules .bar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  height: 6px;
+  background-color: #fb9899;
+  border-radius: 3px;
+}
+
+.hero-media .schedules .bar:first-of-type::after {
+  width: 52.7%;
+}
+
+.hero-media .schedules .bar:nth-of-type(2)::after {
+  width: 68.9%;
+}
+
+.hero-media .schedules .bar:first-of-type::after {
+  width: 44.5%;
+}
+
+.hero-media .schedules .bar:last-of-type {
+  width: 26px;
+  margin-top: 6px;
+}
+
+.hero-media .students {
+  position: absolute;
+  right: 45px;
+  bottom: 41px;
+  padding: 17px 35px;
+  width: 207px;
+  height: 90px;
+  border-radius: 24px;
+  background: #fefefd;
+  box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero-media .avatar-list {
+  margin-top: 8px;
+}
