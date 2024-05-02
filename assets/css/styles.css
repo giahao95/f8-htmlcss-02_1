@@ -7,9 +7,9 @@ html {
 }
 
 body {
-  height: 2000px;
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
+  background-color: #fff;
 }
 
 /* ===== Common ===== */
@@ -587,4 +587,68 @@ a {
   position: absolute;
   left: 212px;
   bottom: 0;
+}
+
+/* ===== CTA ===== */
+.cta {
+  margin-top: 130px;
+  padding: 76px 0 88px;
+  background: #def6f5;
+}
+
+.cta-info .title {
+  color: #070707;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.cta-info .desc {
+  margin-top: 18px;
+  color: #767e7e;
+  font-family: Poppins;
+  font-size: 1.8rem;
+  line-height: normal;
+}
+
+.cta .btn {
+  margin-left: auto;
+}
+
+/* ===== Footer ===== */
+.footer {
+  padding: 131px 0 50px;
+}
+
+.footer .row {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer .item .title {
+  margin-bottom: 25px;
+  color: #2e2e2e;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.footer .item a {
+  color: #535353;
+}
+
+.footer .item li + li {
+  margin-top: 18px;
+}
+
+.footer .social i {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.copyright {
+  margin-top: 80px;
+  color: #b0b5b4;
+  font-family: Poppins;
+  font-size: 1.8rem;
+  text-align: center;
 }
