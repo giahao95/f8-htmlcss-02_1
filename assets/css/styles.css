@@ -523,6 +523,7 @@ a {
   background-color: #2ac9bf;
   border-radius: 50%;
   border: none;
+  cursor: pointer;
 }
 
 .feedback-info .direction button:last-child {
