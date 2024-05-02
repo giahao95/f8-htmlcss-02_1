@@ -449,3 +449,27 @@ a {
   border-radius: 50%;
   background-color: #1ebfc1;
 }
+
+/* ===== Countdown ====== */
+.countdown {
+  margin: 264px 0;
+}
+
+.countdown .container {
+  width: 862px;
+  justify-content: space-between;
+}
+
+.countdown .item .number {
+  color: #0d1111;
+  text-align: center;
+  font-size: 6.2rem;
+  font-weight: 700;
+}
+
+.countdown .item .sub-title {
+  margin-top: 11px;
+  color: #767e7e;
+  text-align: center;
+  font-size: 1.8rem;
+}
